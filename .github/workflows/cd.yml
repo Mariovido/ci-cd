@@ -26,7 +26,6 @@ jobs:
     uses: ./.github/workflows/ci.yml
   deploy:
     needs: [ci]
-  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
